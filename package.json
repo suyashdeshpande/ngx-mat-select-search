@@ -1,5 +1,5 @@
 {
-  "name": "ngx-mat-select-search",
+  "name": "@suyash/ngx-mat-select-search",
   "description": "Library that provides an angular component providing an input field for searching / filtering MatSelect options of the Angular Material library.",
   "version": "1.4.2",
   "license": "MIT",
@@ -16,11 +16,11 @@
   },
   "author": "Suyash Deshpande",
   "bugs": {
-    "url": "https://github.com/bithost-gmbh/ngx-mat-select-search/issues"
+    "url": "https://github.com/suyashdeshpande/ngx-mat-select-search/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bithost-gmbh/ngx-mat-select-search.git"
+    "url": "https://github.com/suyashdeshpande/ngx-mat-select-search.git"
   },
   "keywords": [
     "angular",
@@ -31,7 +31,7 @@
     "search",
     "filter"
   ],
-  "homepage": "https://github.com/bithost-gmbh/ngx-mat-select-search",
+  "homepage": "https://github.com/suyashdeshpande/ngx-mat-select-search",
   "peerDependencies": {
     "@angular/core": "^5.0.0 || ^6.0.0 || ^7.0.0",
     "@angular/cdk": "^5.0.0 || ^6.0.0 || ^7.0.0",
