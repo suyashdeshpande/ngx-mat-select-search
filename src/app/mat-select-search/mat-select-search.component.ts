@@ -10,7 +10,8 @@ import {
   ChangeDetectionStrategy, ChangeDetectorRef,
   Component, ElementRef, EventEmitter, forwardRef, Inject, Input, OnDestroy, OnInit, QueryList,
   ViewChild,
-  ContentChild
+  ContentChild,
+  Output
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { MatOption, MatSelect } from '@angular/material';
@@ -133,6 +134,8 @@ export class MatSelectSearchComponent implements OnInit, OnDestroy, AfterViewIni
 
   /** Reference to custom search input clear icon */
   @ContentChild(MatSelectSearchClearDirective) clearIcon: MatSelectSearchClearDirective;
+
+  @Output() changeInput: EventEmitter<any> = new EventEmitter<any>();
 
   /** Current search value */
   get value(): string {
@@ -430,6 +433,10 @@ export class MatSelectSearchComponent implements OnInit, OnDestroy, AfterViewIni
         .filter(option => option.selected)
         .map(option => option.value);
     }
+  }
+
+  inputChanged(value: string) {
+    this.changeInput.emit(value);
   }
 
 }
